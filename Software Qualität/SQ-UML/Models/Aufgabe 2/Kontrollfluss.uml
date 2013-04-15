@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="idModel" name="KontrollflussModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="KontrollflussPackage">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="idStateMachine" name="KontrollflussStateMachine">
+      <region xmi:id="idRegion" name="MainRegion">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_wOch0KXbEeKSsMNDFNDkMA" name="Pseudostate1"/>
+        <subvertex xmi:type="uml:State" xmi:id="_xMJgMKXbEeKSsMNDFNDkMA" name="nS"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ybNUUKXbEeKSsMNDFNDkMA" name="n1"/>
+        <subvertex xmi:type="uml:State" xmi:id="_-RSKcKXbEeKSsMNDFNDkMA" name="n2"/>
+        <subvertex xmi:type="uml:State" xmi:id="_AK4JUKXcEeKSsMNDFNDkMA" name="n3"/>
+        <subvertex xmi:type="uml:State" xmi:id="_EyhC0KXcEeKSsMNDFNDkMA" name="n4"/>
+        <subvertex xmi:type="uml:State" xmi:id="_FoZh8KXcEeKSsMNDFNDkMA" name="n5"/>
+        <subvertex xmi:type="uml:State" xmi:id="_GuHM0KXcEeKSsMNDFNDkMA" name="n6"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ILMO0KXcEeKSsMNDFNDkMA" name="n7"/>
+        <subvertex xmi:type="uml:State" xmi:id="_KdY68KXcEeKSsMNDFNDkMA" name="n8"/>
+        <subvertex xmi:type="uml:State" xmi:id="_LnldMKXcEeKSsMNDFNDkMA" name="n9"/>
+        <subvertex xmi:type="uml:State" xmi:id="_M3Br0KXcEeKSsMNDFNDkMA" name="n10"/>
+        <subvertex xmi:type="uml:State" xmi:id="_N8jJcKXcEeKSsMNDFNDkMA" name="n11"/>
+        <subvertex xmi:type="uml:State" xmi:id="_n7YqAKXcEeKSsMNDFNDkMA" name="n5E"/>
+        <subvertex xmi:type="uml:State" xmi:id="_3ZZQIKXcEeKSsMNDFNDkMA" name="n9E"/>
+        <subvertex xmi:type="uml:State" xmi:id="_-_GdQKXcEeKSsMNDFNDkMA" name="n11E"/>
+        <subvertex xmi:type="uml:State" xmi:id="_BUu34KXdEeKSsMNDFNDkMA" name="n12"/>
+        <subvertex xmi:type="uml:State" xmi:id="_D02rQKXdEeKSsMNDFNDkMA" name="n13"/>
+        <subvertex xmi:type="uml:State" xmi:id="_GL6pQKXdEeKSsMNDFNDkMA" name="nF"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_JqBu4KXdEeKSsMNDFNDkMA" name="FinalState1"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_OAOTEKXdEeKSsMNDFNDkMA" name="Pseudostate2"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_PUVmUKXdEeKSsMNDFNDkMA" name="" kind="entryPoint"/>
+        <transition xmi:id="_y899lKXbEeKSsMNDFNDkMA" name="" source="_xMJgMKXbEeKSsMNDFNDkMA" target="_ybNUUKXbEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_PexxNaXcEeKSsMNDFNDkMA" name="" source="_ybNUUKXbEeKSsMNDFNDkMA" target="_-RSKcKXbEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_RfnnlaXcEeKSsMNDFNDkMA" name="" source="_-RSKcKXbEeKSsMNDFNDkMA" target="_AK4JUKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_R2yxdaXcEeKSsMNDFNDkMA" name="" source="_AK4JUKXcEeKSsMNDFNDkMA" target="_EyhC0KXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_Sa8AVaXcEeKSsMNDFNDkMA" name="" source="_EyhC0KXcEeKSsMNDFNDkMA" target="_FoZh8KXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_S64rtaXcEeKSsMNDFNDkMA" name="" source="_FoZh8KXcEeKSsMNDFNDkMA" target="_GuHM0KXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_qRZfJaXcEeKSsMNDFNDkMA" name="" source="_GuHM0KXcEeKSsMNDFNDkMA" target="_n7YqAKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_sRYZ5KXcEeKSsMNDFNDkMA" name="" source="_n7YqAKXcEeKSsMNDFNDkMA" target="_-RSKcKXbEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_u5UshKXcEeKSsMNDFNDkMA" name="" source="_FoZh8KXcEeKSsMNDFNDkMA" target="_n7YqAKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_xO9HJKXcEeKSsMNDFNDkMA" name="" source="_ILMO0KXcEeKSsMNDFNDkMA" target="_KdY68KXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_zkZUhaXcEeKSsMNDFNDkMA" name="" source="_KdY68KXcEeKSsMNDFNDkMA" target="_LnldMKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_VcfQVaXdEeKSsMNDFNDkMA" name="" source="_LnldMKXcEeKSsMNDFNDkMA" target="_M3Br0KXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_WBTNlaXdEeKSsMNDFNDkMA" name="" source="_M3Br0KXcEeKSsMNDFNDkMA" target="_3ZZQIKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_YxonNKXdEeKSsMNDFNDkMA" name="" source="_LnldMKXcEeKSsMNDFNDkMA" target="_N8jJcKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_ZPrOFaXdEeKSsMNDFNDkMA" name="" source="_N8jJcKXcEeKSsMNDFNDkMA" target="_BUu34KXdEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_Z8-Y9aXdEeKSsMNDFNDkMA" name="" source="_N8jJcKXcEeKSsMNDFNDkMA" target="_-_GdQKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_bCTpVKXdEeKSsMNDFNDkMA" name="" source="_BUu34KXdEeKSsMNDFNDkMA" target="_-_GdQKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_bq1o9KXdEeKSsMNDFNDkMA" name="" source="_-_GdQKXcEeKSsMNDFNDkMA" target="_3ZZQIKXcEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_dNEQtaXdEeKSsMNDFNDkMA" name="" source="_3ZZQIKXcEeKSsMNDFNDkMA" target="_D02rQKXdEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_dpAl1aXdEeKSsMNDFNDkMA" name="" source="_D02rQKXdEeKSsMNDFNDkMA" target="_GL6pQKXdEeKSsMNDFNDkMA"/>
+        <transition xmi:id="_mj-VtKXdEeKSsMNDFNDkMA" name="" source="_-RSKcKXbEeKSsMNDFNDkMA" target="_ILMO0KXcEeKSsMNDFNDkMA"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
