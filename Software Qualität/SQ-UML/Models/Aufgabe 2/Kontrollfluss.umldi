@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_vR-5kKXbEeKSsMNDFNDkMA" activeDiagram="_vR-5kaXbEeKSsMNDFNDkMA">
   <model href="Kontrollfluss.uml#idStateMachine"/>
-  <diagrams xmi:id="_vR-5kaXbEeKSsMNDFNDkMA" position="0,0" size="100,100" name="Kontrollfluss" viewport="0,0">
+  <diagrams xmi:id="_vR-5kaXbEeKSsMNDFNDkMA" position="0,0" size="100,100" name="Kontrollfluss" viewport="0,338">
     <property xmi:id="_vSRNcKXbEeKSsMNDFNDkMA" key="pageFormatName" value="A4"/>
     <property xmi:id="_vSRNcaXbEeKSsMNDFNDkMA" key="diagramWidth" value="840"/>
     <property xmi:id="_vSRNcqXbEeKSsMNDFNDkMA" key="diagramHeight" value="1188"/>
@@ -285,8 +285,13 @@
         </semanticModel>
         <contained xsi:type="di:EdgeObjectOffset" xmi:id="_mj-VsqXdEeKSsMNDFNDkMA" id="nameEdgeObject" offset="233,-44"/>
         <contained xsi:type="di:EdgeObjectOffset" xmi:id="_mj-Vs6XdEeKSsMNDFNDkMA" visible="false" id="TransitionStereotypeEdgeObject"/>
-        <waypoints>[149, 80, 149, -334]</waypoints>
-        <waypoints>[149, 349, 149, -65]</waypoints>
+        <waypoints>[119, 80, 119, -334]</waypoints>
+        <waypoints>[119, 204, 119, -210]</waypoints>
+        <waypoints>[119, 350, 119, -64]</waypoints>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_t2vlMKaMEeKwE4BlN9Lwbw" position="408,25" size="388,603">
+        <property xmi:id="_t2vlMaaMEeKwE4BlN9Lwbw" key="noteValue" value="nS: begin&#xD;&#xA;&#xD;&#xA;n1: summe :=0;&#xD;&#xA;&#xD;&#xA;n2: for z := 1 to AnzMessungen do&#xD;&#xA;&#xD;&#xA;n3: MessWert := AE1;&#xD;&#xA;&#xD;&#xA;n4: Summe := Summe + MessWert;&#xD;&#xA;&#xD;&#xA;n5: if Schritttest then&#xD;&#xA;&#xD;&#xA;n6: Gib6MesswerteAus(MessWert * SkalWiderstand);&#xD;&#xA;&#xD;&#xA;n5e: end if&#xD;&#xA;&#xD;&#xA;n7: Widerstand := (Summ / AnzMessungen) * SkalWiderstand;&#xD;&#xA;&#xD;&#xA;n8: WiderstandsStatus := Gut.&#xD;&#xA;&#xD;&#xA;n9: if(Widerstand &lt; MinWiderstand) then&#xD;&#xA;&#xD;&#xA;n10: WiderstandStatus := zuKlein;&#xD;&#xA;&#xD;&#xA;n9e: end if&#xD;&#xA;&#xD;&#xA;n11: if(Widerstand >Maxwiderstand) then&#xD;&#xA;&#xD;&#xA;n12: WiderstanddStatus := ZuGross;&#xD;&#xA;&#xD;&#xA;n11e: end if&#xD;&#xA;&#xD;&#xA;n13: GibWiderstandAus(WiderstandStatus, Widerstand);&#xD;&#xA;&#xD;&#xA;nF: end"/>
+        <semanticModel xsi:type="di:SimpleSemanticModelElement" xmi:id="_t2vlMqaMEeKwE4BlN9Lwbw" presentation="default" typeInfo="Note"/>
       </contained>
     </contained>
   </diagrams>
