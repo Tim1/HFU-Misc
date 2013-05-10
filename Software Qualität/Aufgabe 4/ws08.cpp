@@ -8,10 +8,10 @@ using namespace std;
 
 class Person
 {
-		string name;
+		string name; //char
 		int id;
 	public:
-		Person(string name, int id): name(name), id(id) {};
+		Person(string name, int id): name(name), id(id) {};//char
 		void setName(string n) { name = n; };
 		void setId(int i) { id = i; };
 		string getName(void) { return name; };
@@ -52,17 +52,17 @@ class Verkaeufer : public Angestellter
 class Behaelter
 {
 	public:
-		virtual bool insert(Person *) = 0;
+		virtual bool insert(Person*) = 0;
 		virtual bool remove(void) = 0;
 		virtual bool isFull(void) = 0;
 		virtual bool isEmpty(void) = 0;
-		virtual const Person * getFirst(void) = 0;
+		virtual const Person* getFirst(void) = 0;
 		virtual bool hasNext(void) = 0;
-		virtual const Person * getNext(void) = 0;
+		virtual const Person* getNext(void) = 0; //Unklar: Steht der Zeiger anfänglich VOR dem ersten Element?
 };
 class Queue : public Behaelter
 {
-		Person ** PersonQueue;
+		Person** PersonQueue;
 		int Qsize, posinsert, posremove, pos, anz;
 	public:
 		Queue(): Qsize(10), posinsert(0), posremove(0), pos(0), anz(0) { PersonQueue = new Person *[Qsize]; for (int i = 0; i < Qsize; i++) PersonQueue[i] = NULL; }
@@ -76,7 +76,7 @@ class Queue : public Behaelter
 		bool hasNext(void) { return PersonQueue[(pos + 1) % Qsize]!=NULL && (pos + 1) % Qsize != posinsert; }
 		const Person * getNext(void) { return PersonQueue[pos = (pos + 1) % Qsize]; }
 };
-bool Queue::insert(Person * inP)
+bool Queue::insert(Person* inP)
 {
 	if(isFull()) return false;
 	else
@@ -91,6 +91,8 @@ bool Queue::insert(Person * inP)
 		}
 	}
 }
+
+//Inkonsitzenz in den Spezifikation: Laut A3: "Die Funktion remove() entfernt eine Person aus dem Behälter und gibt sie als Rückgabewert zurück."
 bool Queue::remove(void)
 {
 	if(!isEmpty())
@@ -105,7 +107,7 @@ bool Queue::remove(void)
 }
 class Stack : public Behaelter
 {
-		Person ** PersonStack;
+		Person** PersonStack;
 		int Ssize, pos, anz;
 	public:
 		Stack(): Ssize(10), pos(0), anz(0) { PersonStack = new Person *[Ssize]; for (int i = 0; i < Ssize; i++) PersonStack[i] = NULL; }
@@ -117,9 +119,9 @@ class Stack : public Behaelter
 		bool isEmpty(void) { return anz==0; }
 		const Person * getFirst(void) { return PersonStack[pos = 0]; }
 		bool hasNext(void) { return pos + 1 < anz; }
-		const Person * getNext(void) { return PersonStack[++pos]; }
+		const Person* getNext(void) { return PersonStack[++pos]; } //Segmention Fault bei falscher Nutzung. Überprüfung von hasNext()?
 };
-bool Stack::insert(Person * inP)
+bool Stack::insert(Person* inP)
 {
 	if(isFull()) return false;
 	else
