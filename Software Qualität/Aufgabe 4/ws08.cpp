@@ -58,7 +58,7 @@ class Behaelter
 		virtual bool isEmpty(void) = 0;
 		virtual const Person* getFirst(void) = 0;
 		virtual bool hasNext(void) = 0;
-		virtual const Person* getNext(void) = 0; //Unklar: Steht der Zeiger anfänglich VOR dem ersten Element?
+		virtual const Person* getNext(void) = 0; //Unklar: Steht der Zeiger anfï¿½nglich VOR dem ersten Element?
 };
 class Queue : public Behaelter
 {
@@ -92,7 +92,7 @@ bool Queue::insert(Person* inP)
 	}
 }
 
-//Inkonsitzenz in den Spezifikation: Laut A3: "Die Funktion remove() entfernt eine Person aus dem Behälter und gibt sie als Rückgabewert zurück."
+//Inkonsitzenz in den Spezifikation: Laut A3: "Die Funktion remove() entfernt eine Person aus dem Behï¿½lter und gibt sie als Rï¿½ckgabewert zurï¿½ck."
 bool Queue::remove(void)
 {
 	if(!isEmpty())
@@ -117,9 +117,9 @@ class Stack : public Behaelter
 		bool remove(void);
 		bool isFull(void) { return anz==Ssize; }
 		bool isEmpty(void) { return anz==0; }
-		const Person * getFirst(void) { return PersonStack[pos = 0]; }
+		const Person * getFirst(void) { return PersonStack[pos = 0]; } //enstpricht nicht dem eigentlichen Stackverhalten
 		bool hasNext(void) { return pos + 1 < anz; }
-		const Person* getNext(void) { return PersonStack[++pos]; } //Segmention Fault bei falscher Nutzung. Überprüfung von hasNext()?
+		const Person* getNext(void) { return PersonStack[++pos]; } //Segmention Fault bei falscher Nutzung. ï¿½berprï¿½fung von hasNext()?
 };
 bool Stack::insert(Person* inP)
 {
