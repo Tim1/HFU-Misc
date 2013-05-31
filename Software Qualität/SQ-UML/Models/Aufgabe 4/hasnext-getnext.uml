@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="idModel" name="hasnext-getnextModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="hasnext-getnextPackage">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="idStateMachine" name="hasnext-getnextStateMachine">
+      <region xmi:id="idRegion" name="MainRegion">
+        <subvertex xmi:type="uml:State" xmi:id="_Rwk_sMoCEeK09OOsfUi1Rg" name="erstes Element"/>
+        <subvertex xmi:type="uml:State" xmi:id="_V9tHcMoCEeK09OOsfUi1Rg" name="letztes Element"/>
+        <subvertex xmi:type="uml:State" xmi:id="_e0zD8MoCEeK09OOsfUi1Rg" name="mittiges Element"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_h027oMoCEeK09OOsfUi1Rg" name="Start"/>
+        <subvertex xmi:type="uml:State" xmi:id="_pO5rUMoCEeK09OOsfUi1Rg" name="Fehler"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_kzBgcMoDEeK09OOsfUi1Rg" name="FinalState1"/>
+        <transition xmi:id="_jbhXdMoCEeK09OOsfUi1Rg" name="getFirst" source="_h027oMoCEeK09OOsfUi1Rg" target="_Rwk_sMoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_lgAXsMoCEeK09OOsfUi1Rg" name="getNext" source="_Rwk_sMoCEeK09OOsfUi1Rg" target="_e0zD8MoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_nY_5osoCEeK09OOsfUi1Rg" name="getNext" source="_e0zD8MoCEeK09OOsfUi1Rg" target="_V9tHcMoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_uJNpM8oCEeK09OOsfUi1Rg" name="getNext" source="_V9tHcMoCEeK09OOsfUi1Rg" target="_pO5rUMoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_yNmEpMoCEeK09OOsfUi1Rg" name="hasNext" source="_e0zD8MoCEeK09OOsfUi1Rg" target="_e0zD8MoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_-0espMoCEeK09OOsfUi1Rg" name="hasNext" source="_V9tHcMoCEeK09OOsfUi1Rg" target="_V9tHcMoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_CcZOgMoDEeK09OOsfUi1Rg" name="hasNext" source="_Rwk_sMoCEeK09OOsfUi1Rg" target="_Rwk_sMoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_Ho1eMMoDEeK09OOsfUi1Rg" name="getFirst" source="_V9tHcMoCEeK09OOsfUi1Rg" target="_Rwk_sMoCEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_QTpSMMoDEeK09OOsfUi1Rg" name="" source="_e0zD8MoCEeK09OOsfUi1Rg" target="_Rwk_sMoCEeK09OOsfUi1Rg"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
