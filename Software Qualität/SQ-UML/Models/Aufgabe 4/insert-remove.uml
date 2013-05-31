@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="idModel" name="ZustandsdiagrammModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="ZustandsdiagrammPackage">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="idStateMachine" name="ZustandsdiagrammStateMachine">
+      <region xmi:id="idRegion" name="MainRegion">
+        <subvertex xmi:type="uml:State" xmi:id="_WxHzUMoAEeK09OOsfUi1Rg" name="Leer"/>
+        <subvertex xmi:type="uml:State" xmi:id="_RalXAMoBEeK09OOsfUi1Rg" name="Gefüllt"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Ud1soMoBEeK09OOsfUi1Rg" name="Voll"/>
+        <subvertex xmi:type="uml:State" xmi:id="_WzA0QMoBEeK09OOsfUi1Rg" name="Fehler"/>
+        <transition xmi:id="_Y8bX0MoBEeK09OOsfUi1Rg" name="insert" source="_WxHzUMoAEeK09OOsfUi1Rg" target="_RalXAMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_b52yQMoBEeK09OOsfUi1Rg" name="insert" source="_RalXAMoBEeK09OOsfUi1Rg" target="_Ud1soMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_fC0uUMoBEeK09OOsfUi1Rg" name="remove" source="_Ud1soMoBEeK09OOsfUi1Rg" target="_RalXAMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_irvVwMoBEeK09OOsfUi1Rg" name="remove" source="_RalXAMoBEeK09OOsfUi1Rg" target="_WxHzUMoAEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_mmR4sMoBEeK09OOsfUi1Rg" name="remove" source="_WxHzUMoAEeK09OOsfUi1Rg" target="_WzA0QMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_obo30MoBEeK09OOsfUi1Rg" name="insert" source="_Ud1soMoBEeK09OOsfUi1Rg" target="_WzA0QMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_sqPmQMoBEeK09OOsfUi1Rg" name="insert,remove" kind="local" source="_RalXAMoBEeK09OOsfUi1Rg" target="_RalXAMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_2q82NMoBEeK09OOsfUi1Rg" name="Transition1" kind="local" source="_Ud1soMoBEeK09OOsfUi1Rg" target="_Ud1soMoBEeK09OOsfUi1Rg"/>
+      </region>
+      <region xmi:id="_REi1kMoBEeK09OOsfUi1Rg" name="Region1"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
