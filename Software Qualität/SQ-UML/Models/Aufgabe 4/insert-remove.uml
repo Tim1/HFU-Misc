@@ -13,8 +13,10 @@
         <transition xmi:id="_irvVwMoBEeK09OOsfUi1Rg" name="remove" source="_RalXAMoBEeK09OOsfUi1Rg" target="_WxHzUMoAEeK09OOsfUi1Rg"/>
         <transition xmi:id="_mmR4sMoBEeK09OOsfUi1Rg" name="remove" source="_WxHzUMoAEeK09OOsfUi1Rg" target="_WzA0QMoBEeK09OOsfUi1Rg"/>
         <transition xmi:id="_obo30MoBEeK09OOsfUi1Rg" name="insert" source="_Ud1soMoBEeK09OOsfUi1Rg" target="_WzA0QMoBEeK09OOsfUi1Rg"/>
-        <transition xmi:id="_sqPmQMoBEeK09OOsfUi1Rg" name="insert,remove" kind="local" source="_RalXAMoBEeK09OOsfUi1Rg" target="_RalXAMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_sqPmQMoBEeK09OOsfUi1Rg" name="insert, remove, isFull, isEmpty" kind="local" source="_RalXAMoBEeK09OOsfUi1Rg" target="_RalXAMoBEeK09OOsfUi1Rg"/>
         <transition xmi:id="_2q82NMoBEeK09OOsfUi1Rg" name="Transition1" kind="local" source="_Ud1soMoBEeK09OOsfUi1Rg" target="_Ud1soMoBEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_fV3IlMrREeKj_IXMfABpgQ" name="isFull, isEmpty" source="_WxHzUMoAEeK09OOsfUi1Rg" target="_WxHzUMoAEeK09OOsfUi1Rg"/>
+        <transition xmi:id="_mguahMrWEeKj_IXMfABpgQ" name="isFull, isEmpty" source="_Ud1soMoBEeK09OOsfUi1Rg" target="_Ud1soMoBEeK09OOsfUi1Rg"/>
       </region>
       <region xmi:id="_REi1kMoBEeK09OOsfUi1Rg" name="Region1"/>
     </packagedElement>

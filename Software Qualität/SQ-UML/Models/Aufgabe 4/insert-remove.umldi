@@ -19,7 +19,8 @@
         <element href="insert-remove.uml#idRegion"/>
       </semanticModel>
       <contained xsi:type="di:GraphNode" xmi:id="_WwzqQMoAEeK09OOsfUi1Rg" position="71,114" size="50,50">
-        <anchorage xmi:id="_Y76acMoBEeK09OOsfUi1Rg" graphEdge="_Y8awwMoBEeK09OOsfUi1Rg _iruusMoBEeK09OOsfUi1Rg _mmRRoMoBEeK09OOsfUi1Rg"/>
+        <anchorage xmi:id="_Y76acMoBEeK09OOsfUi1Rg" graphEdge="_Y8awwMoBEeK09OOsfUi1Rg _iruusMoBEeK09OOsfUi1Rg _mmRRoMoBEeK09OOsfUi1Rg _fV3IkMrREeKj_IXMfABpgQ"/>
+        <anchorage xmi:id="_fV16cMrREeKj_IXMfABpgQ" graphEdge="_fV3IkMrREeKj_IXMfABpgQ"/>
         <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Ww0RUMoAEeK09OOsfUi1Rg" presentation="default">
           <element href="insert-remove.uml#_WxHzUMoAEeK09OOsfUi1Rg"/>
         </semanticModel>
@@ -32,7 +33,8 @@
         </semanticModel>
       </contained>
       <contained xsi:type="di:GraphNode" xmi:id="_UdvmAMoBEeK09OOsfUi1Rg" position="466,114" size="50,50">
-        <anchorage xmi:id="_b5zH4MoBEeK09OOsfUi1Rg" graphEdge="_b52LMMoBEeK09OOsfUi1Rg _fC0HQMoBEeK09OOsfUi1Rg _obnpsMoBEeK09OOsfUi1Rg"/>
+        <anchorage xmi:id="_b5zH4MoBEeK09OOsfUi1Rg" graphEdge="_b52LMMoBEeK09OOsfUi1Rg _fC0HQMoBEeK09OOsfUi1Rg _obnpsMoBEeK09OOsfUi1Rg _mguagMrWEeKj_IXMfABpgQ"/>
+        <anchorage xmi:id="_mgtzcMrWEeKj_IXMfABpgQ" graphEdge="_mguagMrWEeKj_IXMfABpgQ"/>
         <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_UdvmAcoBEeK09OOsfUi1Rg" presentation="default">
           <element href="insert-remove.uml#_Ud1soMoBEeK09OOsfUi1Rg"/>
         </semanticModel>
@@ -95,6 +97,24 @@
         <contained xsi:type="di:EdgeObjectOffset" xmi:id="_sqO_M8oBEeK09OOsfUi1Rg" visible="false" id="TransitionStereotypeEdgeObject"/>
         <waypoints>[-15, -55, -15, -55]</waypoints>
         <waypoints>[18, -55, 18, -55]</waypoints>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_fV3IkMrREeKj_IXMfABpgQ" anchor="_Y76acMoBEeK09OOsfUi1Rg _fV16cMrREeKj_IXMfABpgQ">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_fV3IkcrREeKj_IXMfABpgQ" presentation="default">
+          <element href="insert-remove.uml#_fV3IlMrREeKj_IXMfABpgQ"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_fV3IksrREeKj_IXMfABpgQ" id="nameEdgeObject" offset="-3,-16"/>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_fV3Ik8rREeKj_IXMfABpgQ" visible="false" id="TransitionStereotypeEdgeObject"/>
+        <waypoints>[-21, -57, -21, -57]</waypoints>
+        <waypoints>[24, -57, 24, -57]</waypoints>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_mguagMrWEeKj_IXMfABpgQ" anchor="_b5zH4MoBEeK09OOsfUi1Rg _mgtzcMrWEeKj_IXMfABpgQ">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_mguagcrWEeKj_IXMfABpgQ" presentation="default">
+          <element href="insert-remove.uml#_mguahMrWEeKj_IXMfABpgQ"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_mguagsrWEeKj_IXMfABpgQ" id="nameEdgeObject" offset="0,-11"/>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_mguag8rWEeKj_IXMfABpgQ" visible="false" id="TransitionStereotypeEdgeObject"/>
+        <waypoints>[-26, -56, -26, -56]</waypoints>
+        <waypoints>[27, -56, 27, -56]</waypoints>
       </contained>
     </contained>
     <contained xsi:type="di:GraphNode" xmi:id="_REXPYMoBEeK09OOsfUi1Rg" position="208,130" size="-1,-1">
