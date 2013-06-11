@@ -5,32 +5,34 @@ something here
 
 and there
 
-Projekts
---------
-### Windows shutdown
-# Idee
+# Projekts
+
+Windows shutdown
+--------------------
+#### Idee
 Das war die Idee
 
-# Hinführung
-Das war die Hinführung
+##### HinfÃ¼hrung
+Das war die HinfÃ¼hrung
 
-# Probleme & Lösung
+#### Probleme & LÃ¶sung
 Das waren die Probleme
 
-# Ergebnis
+#### Ergebnis
 Und hier das ergebnis
 
 
 
-### "Linux" auf dem Teensy
-# Idee
+"Linux" auf dem Teensy
+-----------------------
+#### Idee
 Das war die Idee
 
-# Hinführung
-Das war die Hinführung
+#### HinfÃ¼hrung
+Das war die HinfÃ¼hrung
 
-# Probleme & Lösung
+#### Probleme & LÃ¶sung
 Das waren die Probleme
 
-# Ergebnis
+#### Ergebnis
 Und hier das ergebnis
