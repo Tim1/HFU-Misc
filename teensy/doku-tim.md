@@ -1,11 +1,11 @@
-Teensy Doku
+﻿Teensy Doku
 ===========
 
 something here
 
 and there
 
-# Projekts
+# Projektsgit 
 
 Windows shutdown
 --------------------
