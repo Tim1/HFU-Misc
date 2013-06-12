@@ -113,6 +113,9 @@ void processCmd(){
   if(cmd == "clear"){
     clearConsole();
   }
+  else if(cmd == "man"){
+    man(arg1);
+  }
   else if(cmd == "test"){
     printColored("Das ist ein Test","green");
     Serial.println();
@@ -182,10 +185,13 @@ void writeFile(String arg1, String arg2, String input){
     Serial.println();
     return;
   }
-  char* text = toChar(splitStringLast(input,' ',2));
+  String text = splitStringLast(input,' ',2);
   
-  Serial.println("Text: '"+text+"'");
-  file.write(text);
+  Serial.print("Text: '");
+  Serial.print(text);
+  Serial.println("'");
+  
+  file.println(text);
   file.close();
 }
 
