@@ -113,15 +113,30 @@ void processCmd(){
   if(cmd == "clear"){
     clearConsole();
   }
-  else if(cmd == "man"){
+  else if(cmd == "man" || cmd == "help"){
     man(arg1);
   }
-  else if(cmd == "test"){
-    printColored("Das ist ein Test","green");
+  else if(cmd == "color"){
+    printColored("----====<<<< Color!!! >>>>====----","green");
+    Serial.println();
+    printColored("----====<<<< Color!!! >>>>====----","yellow");
+    Serial.println();
+    printColored("----====<<<< Color!!! >>>>====----","blue");
+    Serial.println();
+    printColored("----====<<<< Color!!! >>>>====----","red");
+    Serial.println();
+    printColored("----====<<<< Color!!! >>>>====----","magenta");
+    Serial.println();
+    printColored("----====<<<< Color!!! >>>>====----","cyan");
+    Serial.println();
+    printColored("----====<<<< Color!!! >>>>====----","white");
+    Serial.println();
+    printColored("----====<<<< Color!!! >>>>====----","black");
     Serial.println();
   }
   else if(cmd == "whoami"){
-    Serial.println("Teensy");
+    printColored("Teensy","cyan");
+    Serial.println();
   }
   else if(cmd == "pwd"){
     Serial.println(pwd);
@@ -186,11 +201,11 @@ void writeFile(String arg1, String arg2, String input){
     return;
   }
   String text = splitStringLast(input,' ',2);
-  
+
   Serial.print("Text: '");
   Serial.print(text);
   Serial.println("'");
-  
+
   file.println(text);
   file.close();
 }
@@ -242,6 +257,12 @@ void rm(String arg1, String arg2,String arg3){
 
 void cat(String arg1, String arg2,String arg3){
   String toPrint = pwd + arg1;
+  if(arg1 == ""){
+    printColored("Failed to read file: "+toPrint,"red");
+    Serial.println();
+    return; 
+  }
+
 
   File file = SD.open(toChar(toPrint),FILE_READ);
   if(file){
@@ -257,6 +278,7 @@ void cat(String arg1, String arg2,String arg3){
   }
 
 }
+
 
 
 
