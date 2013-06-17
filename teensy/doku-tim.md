@@ -4,23 +4,28 @@
 Windows shutdown
 --------------------
 #### Idee
-- Potenzial zeigen
-- Eindruck ohne Schaden 
+Die Idee entwickelte sich beim ausprobieren der Features des Teensy. Nachdem Tastatureingaben ohne Probleme mithilfe von sehr wenig Programmcode möglich waren, stellte sich die Frage wie man damit einfach eine vorzeigbare Aktion machen könnte.
+Da ein Öffnen der Kommandozeile sehr einfach ist, war die Idee den Windowsrechner über die Befehler herunterzufahren.
+Dadurch ist gut präsentierbares und vor allem schadfreies Verhalten des Teensy geschaffen.
 
 
 ##### Hinführung
-- selber Teensy Ausprobieren
-- Tastatureingaben simulieren (Tastendruck Windows-Taste)
-- als Keyboard einstellen im Arduino
+Wie schon oben erwähnt hatte kam die Idee beim Ausprobieren des Teensy zustande. 
+Dazu hatte ich versucht verschiedene Dinge mithilfe der Tastatureingaben zu simulieren (Schreiben im Editor, Drücken von "Spezialtasten" wie STRG oder Windows-Taste)
+Über die Tastenkombination WIN+R wird unter Windows das "Ausführen-Fenster" geöffnet. Hier kann über den Befehl "cmd" und bestätigung durch Enter, die Kommandozeile geöffnet werden.
+Nun kann das Teensy jegliche Befehle ausführen, unter anderem auch "shutdown", welcher zum Herunterfahren des Rechners führt. Über die Parameter `???` wird dies auch erzwungen ohne auf die Bestätigung des Users zu warten.
+
+Für diesen kleinen Sketch muss das Teensy in der Arduino-IDE lediglich auf Eingabemodus "USB-Tastatur" eingestellt sein.
+
 
 #### Probleme & Lösung
-- sehr simpel (keine Probleme)
-- Windows muss Treiber installieren -.-
+Da diese Aufgabe sehr simpel war gab es hier keine ernsthafen Probleme.
+Der einzige Wehrmutstropfen bei der Präsentation dieses Sketches ist, dass unter Windows erst recht lange Tastatur-Treiber für das Teensy installiert werden. Das schadet natürlich den Effekt beim Vorstellen. Sobald das Teensy jedoch einmal initialisiert wurde, fällt dieser Schritt jedoch weg.
 
 
 #### Ergebnis
-- Teensy wird eingesteckt, öffnet cmd, fährt Computer runter
-- Code: siehe `win_shutdown.ino`
+Als Ergebnis haben wir nun einen Szenario, indem das Teensy eingesteckt wird, danach eine Kommandozeile öffnet und den Rechner herunterfährt.
+Der Code befindet sich im Anhang unter `win_shutdown.ino`
  
 
 
