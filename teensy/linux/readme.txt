@@ -1,6 +1,37 @@
-### Von serieller Kommunikation zum "Linux" auf dem Teensy
+## Von serieller Kommunikation zum "Linux" auf dem Teensy
 
-Aufgabe 1 - serielle Kommuikation
+### Aufgabe 1 - serielle Kommuikation
+- serielle Schnittstelle identifizieren / wie benutzen (Windows/Linux)
+- Teensy als serielles Gerät einstellen
+- verbinden über putty (Port, baut-rate) 
+- übertragen von einzelnen Tastatureingaben (Buchstaben, evtl STRG+C, Pfeiltasten)
+- Ziel: remote LED ein/ausschalten
+
+### Aufgabe 2 - Eingabeverarbeitung und SD-Karte
+- Arduino-Bibliothek für SD-Karte anschauen
+- Beispiele ausprobieren: anlegen einer Datei, reinschreiben, löschen
+
+- mehrere Tastatureingaben in String zusammenfassen
+- Befehle erkennen
+- Ausnahmen erkennen: Backspace, ESC-Tasten, Pfeiltasten...
+- Besonderheiten in Konsole: Farben, clear
+- Ziel: console clear und in Farbe ausgeben
+
+
+### Aufgabe 3 - "Linux" auf dem Teensy
+- Implementierung anschauen & verstehen
+- Ausprobieren, Grenzfälle/Bugs/Issues finden
+- neue Befehle, evtl grafische Ausgabe?
+- Ziel: Tab-vervollständigung
+
+
+
+
+
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
 
 
 #### Vorbedinung:
