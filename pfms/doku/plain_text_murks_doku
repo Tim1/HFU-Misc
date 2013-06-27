@@ -1,0 +1,52 @@
+# Einrichten TFTP-Server (atftpd)
+sudo apt-get install atftpd
+sudo vi /etc/default/atftpd
+        USE_INETD=false
+
+sudo invoke-rc.d atftpd start
+
+ls -l /
+...
+drwxrwxrwx   2 nobody root  4096 Jun  3 13:20 tftpboot
+...
+
+
+# TFTP-Server testen
+auf Target:
+        ping <IP>
+        -> funktioniert
+
+        tftp <IP>
+        -> funktioniert nicht
+
+
+# Einrichten TFTP-Server (tftpd-hpa)
+sudo apt-get install tftpd-hpa
+sudo vi /etc/default/tftpd-hpa
+        +
+        RUN_DAEMON="yes"
+sudo chmod 777 /var/lib/tftpboot
+
+sudo service tftpd-hpa start
+
+ls -l /var/lib/
+...
+drwxrwxrwx 2 nobody        nogroup       4096 Jun 18 15:22 tftpboot
+...
+
+# TFTP-Server testen
+auf Target:
+        ping <IP>
+        -> funktioniert
+
+        tftp <IP>
+        -> funktioniert (get, put nicht)
+
+# u-boot
+
+verschiendene u-boot-Files getestet
+- meist "ethernet not found" -> kein ethernet, kein tftpboot
+- wenn nicht: "NET: KS8851SNL"
+	autoboot -> bad magic number
+	tftpboot nach anleitung -> board hängt sich auf
+- tftp-hpa logfiles: nicht aufzufinden (verbosity in config hochgesetzt, manpage angesehen, recherchiert ... nichts)

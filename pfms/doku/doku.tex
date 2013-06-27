@@ -1,0 +1,28 @@
+\documentclass[11pt,twoside,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+\newcommand{\sectionbreak}{\clearpage}
+\renewcommand\contentsname{Inhaltsverzeichnis}
+
+\begin{document}
+\pagenumbering{roman}
+\includepdf{titlepage.pdf}
+
+\clearpage
+\setcounter{page}{1}
+\tableofcontents
+
+\section{Aufgabenstellung}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+Foo bar bla bla
+
+\section{Umsetzung}
+\subsection{TFTP}
+meh, aber geht
+\subsection{U-Boot}
+abfuck
+\end{document}
